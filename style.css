@@ -62,13 +62,28 @@ table {
     text-transform: uppercase;
     /*color: #FF7300;*/
   }
+
+  @media screen and (max-width: 1200px){
+    .column {
+      width: 31%;
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
   
+  @media screen and (max-width: 998px){
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (max-width: 600px) {
 
     .column {
       width: 100%;
       display: block;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     table {
