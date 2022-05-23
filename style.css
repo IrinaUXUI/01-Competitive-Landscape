@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/*CARD*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 32%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ТЕѝТ*/
+label{
+color: #D9D9D9;
+font-weight: 600;
+}
+
+
+
+/* TABLE */
+table {
+   /* border: 1px solid #ccc;*/
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 2em;
+    margin: .5em 0 .75em;
+    color: #FF7300;
+    font-weight: 700;
+  }
+  
+  table tr {
+    background-color: #00002d;
+   border-bottom: 1px solid rgb(23, 22, 22);
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    color: #D9D9D9;
+  }
+  
+  table th {
+    font-size: 1em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    /*color: #FF7300;*/
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #FF7300;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid rgb(23, 22, 22);
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* general styling */
+  body {
+    background: #010117;
+    font-family: 'Cormorant Infant', serif;
+    line-height: 1.50;
+    color: #D9D9D9;
+    box-sizing: border-box;
+    font-size: 1.1em;
+  }
+
+  .fa{
+      color:#D9D9D9;
+      font-size: 30px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #00002d;
+    color: #D9D9D9;
+    border-radius: 16px;
+    
+  }
+  
+  p:last-of-type{
+    text-align: left;
+  }
+
+  span{
+    color: #FF7300;
+  }
+  td:first-of-type{
+    text-align: left;
+  }
